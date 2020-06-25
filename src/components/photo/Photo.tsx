@@ -31,10 +31,6 @@ const mapDispatchToProps = (dispatch: Redux.Dispatch<any>): Object => ({
   fetchPhotoAction: () => dispatch(fetchPhotoAction()),
 });
 
-/**
- * @todo typecheck the connected component and it's various state
- */
-
 export const Photo: PhotoConnected | any = connect(
   mapStateToProps,
   mapDispatchToProps
